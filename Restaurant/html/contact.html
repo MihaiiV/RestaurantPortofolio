@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/CSS/contact.css" />
+  </head>
+  <body>
+    <div class="sidebar-content-wrapper">
+      <label class="hamburger-menu">
+        <input type="checkbox" />
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <a href="index.html">Home</a>
+          <br />
+          <a href="restaurant.html">Restaurant</a>
+          <br />
+          <a href="orderonline.html">Order Online</a>
+          <br />
+          <a href="contact.html">Contact</a>
+          <br />
+        </nav>
+      </aside>
+      <!-- Content -->
+      <div class="content">
+        <h1>Contact List</h1>
+        <table>
+          <tr>
+            <th>ADRESA</th>
+            <th>COMENZI</th>
+            <th>REZERVARI</th>
+            <th>EMAIL</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0755 555 555 📞</td>
+            <td>0755 666 666 📞</td>
+            <td>jane@gmail.com ✉</td>
+          </tr>
+          <tr>
+            <td>Bulevardul Eroilor 50, Cluj-Napoca</td>
+            <td>0755 777 777 📞</td>
+            <td>0755 888 888 📞</td>
+            <td>jon@gmail.com ✉</td>
+          </tr>
+        </table>
+        <h4>Nume(obligatoriu)</h4>
+        <form id="contactForm">
+          <input
+            type="text"
+            name="firstname"
+            required
+            placeholder="First Name"
+          />
+          <h4>Email (obligatoriu)</h4>
+          <input
+            type="text"
+            name="Email"
+            required
+            placeholder="Email Address"
+          />
+          <h4>Subiect</h4>
+          <input type="text" name="Subiect" placeholder="Subject" />
+          <h4>Mesaj</h4>
+          <input type="text" name="Mesaj" placeholder="Your Message" />
+          <p>
+            Prin clic pe butonul trimite, esti de acord cu prelucrarea datelor
+            cu caracter personal.
+          </p>
+          <button type="submit">Trimite</button>
+        </form>
+      </div>
+    </div>
+    <div class="loading-spinner" id="loadingSpinner">
+      <div class="spinner"></div>
+    </div>
+    <div class="error-message" id="errorMessage"></div>
+    <div class="success-message" id="successMessage"></div>
+
+    <script src="/JS/contact.js"></script>
+  </body>
+</html>
